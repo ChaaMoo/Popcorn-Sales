@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to Moo's Popcorn Sales</h1>
+
+    <h3>Pair Programming #2</h3>
+
+    <form>
+
+      <label for = "Bname">Buyer's Name: </label> 
+      <input type = "text" name = "Bname" size = "12" minlength = "1" placeholder = "Name"/>  
+        <p></p>
+      <label for = "Saddress">Street Address: </label> 
+      <input type = "text" name = "Saddress" size = "12" minlength = "1" placeholder = "Address"/>  
+       
+      <label for = "Location">City,State,Zip: </label> 
+      <input type = "text" name = "Location" size = "12" minlength = "1" placeholder = "Location"/>  
+        <p></p>
+
+
+        <table>
+            <tr>
+            <th> Product Name </th>
+            <th> Price </th>
+            <th> Quality </th>
+            </tr>
+    
+            <tr>
+                <td>Unpopped Popcorn (1 lb).</td>
+                <td> $3.00 </td>
+                <td> <input type = "text" name = "Q1" size = "4" maxlength = "10"/> </td>
+            </tr>
+            
+            <tr>
+                <td> Caramel Popcorn (2 lb. cannister) </td>
+                <td> $3.50 </td>
+                <td> <input type = "text" name = "Q2" size = "4" maxlength = "10"/> </td>        </td>
+            </tr>
+    
+            <tr>
+                <td>Caramel Nut Popcord (2 lb. cannister)</td>
+                <td> $4.50 </td>
+                <td> <input type = "text" name = "Q3" size = "4" maxlength = "10"/> </td>        </td>
+                </tr>
+            <tr>
+                <td>Toffey Nut Popcord (2 lb. cannister)</td>
+                <td> $5.00 </td>
+                <td> <input type = "text" name = "Q4" size = "4" maxlength = "10"/> </td>        </td>
+                </tr>
+
+        </table>
+
+        <h3>Payment Method:</h3>
+        <input type = "radio" id = "Visa" name = "payment" value = "1" checked/>
+        <label for = "Visa">Visa</label><br>
+
+        <input type = "radio" id = "Master" name = "payment" value = "2"/>
+        <label for = "Master">Master Card</label><br>
+
+        <input type = "radio" id = "Discover" name = "payment" value = "3"/>
+        <label for = "Discover">Discover</label><br>
+
+        <input type = "radio" id = "Check" name = "payment" value = "3"/>
+        <label for = "Check">Check</label><br>
+
+        <input type="submit" value="Submit">  
+        <input type="reset" value="Clear Order Form">
+
+    </form>
+</body>
+</html>
